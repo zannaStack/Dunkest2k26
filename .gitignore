@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+web/node_modules/
+
+# Vite build output
+web/dist/
+web/.vite/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# System files
+.DS_Store
+Thumbs.db

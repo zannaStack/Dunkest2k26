@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "TestSQL",
+            "database": "mio_database.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
