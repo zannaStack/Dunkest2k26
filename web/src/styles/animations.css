@@ -1,0 +1,23 @@
+/* Animations used by the Dunkest Manager app */
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 4px rgba(239, 68, 68, 0.2); }
+  50% { box-shadow: 0 0 12px rgba(239, 68, 68, 0.5); }
+}
+

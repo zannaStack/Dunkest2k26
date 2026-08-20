@@ -1,0 +1,196 @@
+.market-panel {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-premium);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.title-text {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-count {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--border-color);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-box i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.input-search {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 10px 14px 10px 38px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.input-search:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 3px var(--accent-green-glow);
+}
+
+.select-team {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-width: 140px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.pill.active {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #fff;
+  box-shadow: 0 2px 8px var(--accent-green-glow);
+}
+
+.filter-options-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.price-slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-slider {
+  flex-grow: 1;
+  accent-color: var(--accent-green);
+  cursor: pointer;
+}
+
+.price-display {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-green);
+  min-width: 45px;
+  text-align: right;
+}
+
+.tag-toggles {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.toggle-tag-btn {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.toggle-tag-btn:hover {
+  background: var(--bg-card-hover);
+}
+
+.toggle-tag-btn.active.affare {
+  background: var(--accent-green-glow);
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
+
+.toggle-tag-btn.active.fregatura {
+  background: var(--accent-red-glow);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}

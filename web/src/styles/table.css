@@ -1,0 +1,152 @@
+.player-list-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: rgba(0,0,0,0.1);
+}
+
+.player-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+}
+
+.player-table th {
+  background: var(--bg-card);
+  position: sticky;
+  top: 0;
+  padding: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.player-table th:hover {
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+
+.player-table th span {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.player-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.player-row {
+  transition: background 0.2s ease;
+}
+
+.player-row:hover {
+  background: var(--bg-card-hover);
+}
+
+.player-row.tag-affare {
+  background: var(--accent-green-glow);
+}
+.player-row.tag-fregatura {
+  background: var(--accent-red-glow);
+}
+
+.player-name-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-fullname {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.player-team-role {
+  font-size: 11px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.role-badge {
+  background: var(--border-color);
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.role-G { border-left: 2px solid var(--accent-blue); }
+.role-F { border-left: 2px solid var(--accent-gold); }
+.role-C { border-left: 2px solid var(--accent-red); }
+
+.tag-label {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.tag-label.affare {
+  background: var(--accent-green);
+  color: #fff;
+}
+.tag-label.fregatura {
+  background: var(--accent-red);
+  color: #fff;
+}
+
+.btn-buy {
+  background: var(--accent-green);
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px var(--accent-green-glow);
+}
+
+.btn-buy:hover {
+  transform: scale(1.1) rotate(90deg);
+  background: var(--accent-green-dark);
+}
+
+.btn-buy:disabled {
+  background: var(--text-muted);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.btn-delete {
+  background: var(--accent-red);
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px var(--accent-red-glow);
+}
+
+.btn-delete:hover {
+  transform: scale(1.1);
+  background: var(--accent-red-dark);
+}
+
