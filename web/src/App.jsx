@@ -1,3 +1,4 @@
+// Algoritmo target price consigliato
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Filtri from './components/Filtri';
