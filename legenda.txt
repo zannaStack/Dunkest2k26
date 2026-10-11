@@ -1,0 +1,38 @@
+Dunkest2k26/
+|
++-- .gitignore              <-- File di esclusione per il controllo versione
++-- apri_sito.bat           <-- Script batch per avviare l'app web locale
++-- archive_scripts/        <-- Archivio script Python scratch e utility di pre-elaborazione
++-- consigli_draft_2627.md  <-- Guida strategica e Tier List Draft (3 slot x ruolo, 12 giocatori x slot)
++-- legenda.txt             <-- Legenda aggiornata della struttura del progetto
++-- web/                    <-- App web React e risorse frontend
+    +-- index.html          <-- Pagina HTML principale per Vite / app web
+    +-- package.json        <-- Dipendenze npm e script di sviluppo
+    +-- vite.config.js      <-- Configurazione del bundler Vite
+    +-- public/             <-- Risorse statiche servite direttamente
+    |   +-- data/           <-- Dati pubblici dei giocatori
+    |       +-- Giocatori2627_computed.json <-- Database unificato precalcolato (89KB, caricamento istantaneo)
+    |       +-- Giocatori2324.txt
+    |       +-- Giocatori2425.txt
+    |       +-- Giocatori2526.txt
+    |       +-- Giocatori2627.txt
+    +-- src/                <-- Sorgenti React dell'app
+        +-- App.jsx         <-- Componente root con scorciatoie tastiera globali
+        +-- main.jsx        <-- Entry point React
+        +-- hooks/          <-- Hook personalizzati
+        |   +-- useDunkestApp.js <-- State manager con caricamento ultra-rapido e gestione asta
+        +-- components/     <-- Componenti UI React
+        |   +-- AvversariPanel.jsx    <-- Pannello budget e roster degli avversari
+        |   +-- Filtri.jsx            <-- Cerca rapida con scorciatoia '/', filtri per ruolo e tag
+        |   +-- Header.jsx            <-- Header con budget iniziale, tema e selettore stagione
+        |   +-- Navbar.jsx            <-- Barra di navigazione (wrapper di Header)
+        |   +-- PurchasePopup.jsx     <-- Popup per inserire il prezzo d'asta ed assegnare il giocatore
+        |   +-- RegistroAstaPanel.jsx <-- Storico degli acquisti con possibilità di modifica/reversione
+        |   +-- RosterSquadra.jsx     <-- Pannello centrale con Roster e statistiche
+        |   +-- TabellaGiocatori.jsx  <-- Tabella mercato ottimizzata con ordinamento e tag
+        |   +-- TeamDropdown.jsx      <-- Dropdown per la selezione squadre NBA
+        +-- styles/         <-- Fogli di stile CSS modulari
+        +-- utils/          <-- Helper e funzioni condivise
+            +-- config.js       <-- Configurazione slot, ruoli e costanti di budget
+            +-- playerUtils.js  <-- Normalizzazione, filtri ed algoritmo Rating_Asta
+            +-- rosterUtils.js  <-- Calcolo statistiche e regole di validazione roster
